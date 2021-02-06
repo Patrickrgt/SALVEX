@@ -473,7 +473,6 @@ class Assessment extends Component {
                             <React.Fragment>
                               <a
                                 className="matching-item"
-                                href="#"
                                 onClick={() => {
                                   this.fetchCUI(filteredItem.relationCui);
                                 }}

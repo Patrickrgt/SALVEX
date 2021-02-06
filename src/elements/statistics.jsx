@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+
 import NumberFormat from "react-number-format";
-import webmd from "../img/webmd.png";
+
 import line from "../img/line.png";
 import loading from "../img/loading.gif";
 

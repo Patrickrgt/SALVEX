@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class NavBar extends Component {
   hideBtn() {
-    if (document.getElementById("hamburguer").style.display == "inline") {
+    if (document.getElementById("hamburguer").style.display === "inline") {
       document.getElementById("hamburguer").style.display = "none";
     } else {
       document.getElementById("hamburguer").style.display = "inline";
