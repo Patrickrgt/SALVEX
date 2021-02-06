@@ -226,7 +226,7 @@ select {
   z-index: 1;
 }
 
-.matching-border a {
+.matching-border span {
   background-color: white;
   color: #9e9da9 !important;
   text-align: center;

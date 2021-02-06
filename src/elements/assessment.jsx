@@ -471,14 +471,15 @@ class Assessment extends Component {
                           .slice(0, 5)
                           .map((filteredItem) => (
                             <React.Fragment>
-                              <a
+                              <span
+                                href="#"
                                 className="matching-item"
                                 onClick={() => {
                                   this.fetchCUI(filteredItem.relationCui);
                                 }}
                               >
                                 {filteredItem.relationSynonym}
-                              </a>
+                              </span>
                             </React.Fragment>
                           ))}
                       </div>
