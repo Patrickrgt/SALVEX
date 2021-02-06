@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as firebase from "firebase";
+
 import { db } from "../store/firebase.js";
 import webmd from "../img/webmd.png";
 import loading from "../img/loading.gif";
@@ -193,7 +193,7 @@ class Assessment extends Component {
         .then((querySnapshot) => {
           let data = querySnapshot.data();
           let diseaseList = Object.keys(data.diseaseRelations);
-          let diseaseListValues = Object.values(data.diseaseRelations);
+
           diseases.push(diseaseList);
           console.log(diseases);
 
@@ -224,16 +224,6 @@ class Assessment extends Component {
 
     // console.log(this.state.diseasesMerge.length);
 
-    for (const len in this.state.diseasesMerge) {
-      // console.log(Object.keys(this.state.diseasesMerge[len].diseaseRelations));
-      for (const j in this.state.diseasesMerge[len].diseaseRelations) {
-        // console.log(
-        //   Object.keys(this.state.diseasesMerge[len].diseaseRelations[j])
-        // );
-      }
-      // console.log(this.state.diseasesMerge[len].cui);
-    }
-
     let mergedDiseases = [];
 
     for (const i in diseases) {
@@ -243,7 +233,7 @@ class Assessment extends Component {
     }
 
     let findDuplicates = (arr) =>
-      arr.filter((item, index) => arr.indexOf(item) != index);
+      arr.filter((item, index) => arr.indexOf(item) !== index);
 
     let matchingDiseasesX = findDuplicates(mergedDiseases);
 

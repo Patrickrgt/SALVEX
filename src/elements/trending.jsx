@@ -1,19 +1,14 @@
 import React, { Component } from "react";
 import Pagination from "../elements/pagination";
 import { paginate } from "../utils/paginate";
-import { Container, Row, Col } from "react-bootstrap";
-import ReactDOM from "react-dom";
-import webmd from "../img/webmd.png";
+import { Container } from "react-bootstrap";
+
 import line from "../img/line.png";
 import loading from "../img/loading.gif";
 const NewsAPI = require("newsapi");
 const newsapi = new NewsAPI("ce0ebff1947a464681f8c1204c2b7745", {
   corsProxyUrl: "https://cors-anywhere.herokuapp.com/",
 });
-const reqOptions = {
-  mode: "cors",
-  headers: { "Access-Control-Allow-Origin": "*" },
-};
 
 class Trending extends Component {
   constructor() {
@@ -36,8 +31,6 @@ class Trending extends Component {
         country: "us",
       })
       .then((response) => {
-        let data = response.articles;
-
         this.setState(
           {
             articles: response.articles,
