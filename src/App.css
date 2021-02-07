@@ -1,9 +1,5 @@
 /* GLOBAL */
 
-svg {
-  margin-bottom: -1px;
-}
-
 /* HEADER TEXT FOR MAJORITY OF TEXTS */
 
 .header {
@@ -390,7 +386,7 @@ input::-webkit-calendar-picker-indicator {
 img {
   padding: 0.25rem 0.75rem;
   background-color: transparent;
-  border: 1px solid transparent;
+
   border-radius: 0.25rem;
   position: absolute;
   right: 0;
