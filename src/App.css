@@ -420,6 +420,40 @@ img {
   /* align-self: ; */
 }
 
+/* CREDITS HOME PAGE */
+
+.credits-contain {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.credits-title {
+  color: #b4b0ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.credits {
+  font-weight: 600;
+  color: #b4b0ff;
+  font-size: 24px;
+  margin: auto;
+  text-align: left;
+}
+
+.credits-sub {
+  color: #b4b0ff;
+  font-size: 18px;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
 /* TRANSITIONS */
 
 .slide-right {
