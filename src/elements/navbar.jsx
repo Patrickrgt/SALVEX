@@ -16,7 +16,6 @@ class NavBar extends Component {
         <nav id="navbar">
           <div
             className="navbar-hamburger"
-            type="button"
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
             aria-controls="collapsibleNavbar"
@@ -86,7 +85,6 @@ class NavBar extends Component {
             >
               <div className="col">
                 <div
-                  type="button"
                   align="right"
                   onClick={() => {
                     window.location.href = "./statistics";
@@ -132,7 +130,6 @@ class NavBar extends Component {
               </div>
               <div className="col">
                 <div
-                  type="button"
                   onClick={() => {
                     window.location.href = "./assessment";
                   }}
@@ -188,7 +185,6 @@ class NavBar extends Component {
               </div>
               <div className="col" align="left">
                 <div
-                  type="button"
                   onClick={() => {
                     window.location.href = "./news";
                   }}
