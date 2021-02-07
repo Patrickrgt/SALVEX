@@ -30,26 +30,33 @@ function App() {
         </Switch>
       </div>
 
-      <main className="credits-contain">
-        <h1 className="credits-title">SLAVEX TEAM</h1>
-        <h2 className="credits">Maria-Victoria Vladucu</h2>
-        <h3 className="credits-sub">
-          UI Design &amp; Development, Data Design
-        </h3>
-        <h2 className="credits">Matthew Wissell</h2>
-        <h3 className="credits-sub">
-          Data Design &amp; Development, Algorithm Design
-        </h3>
-        <h2 className="credits">Patrick Torres</h2>
-        <h3 className="credits-sub">
-          UI Design &amp; Development, Algorithm Design &amp; Development,
-          Integration{" "}
-        </h3>
-        <h2 className="credits">Isabella Soldati Mol</h2>
-        <h3 className="credits-sub">
-          UI Design &amp; Development, Algorithm Design
-        </h3>
-      </main>
+      <div>
+        {window.location.href ===
+        "https://wonderful-swanson-7cf8e8.netlify.app/" ? (
+          <main className="credits-contain">
+            <h1 className="credits-title">SLAVEX TEAM</h1>
+            <h2 className="credits">Maria-Victoria Vladucu</h2>
+            <h3 className="credits-sub">
+              UI Design &amp; Development, Data Design
+            </h3>
+            <h2 className="credits">Matthew Wissell</h2>
+            <h3 className="credits-sub">
+              Data Design &amp; Development, Algorithm Design
+            </h3>
+            <h2 className="credits">Patrick Torres</h2>
+            <h3 className="credits-sub">
+              UI Design &amp; Development, Algorithm Design &amp; Development,
+              Integration{" "}
+            </h3>
+            <h2 className="credits">Isabella Soldati Mol</h2>
+            <h3 className="credits-sub">
+              UI Design &amp; Development, Algorithm Design
+            </h3>
+          </main>
+        ) : (
+          <div></div>
+        )}
+      </div>
     </React.Fragment>
   );
 }
