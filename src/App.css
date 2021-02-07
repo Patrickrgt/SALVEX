@@ -382,8 +382,7 @@ input::-webkit-calendar-picker-indicator {
   width: 100%;
 }
 
-.navbar-hamburger,
-img {
+.navbar-hamburger {
   padding: 0.25rem 0.75rem;
   position: absolute;
   right: 0;
