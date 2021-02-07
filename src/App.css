@@ -1,5 +1,15 @@
 /* GLOBAL */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://use.typekit.net/nbh2lgw.css");
+
+body {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* HEADER TEXT FOR MAJORITY OF TEXTS */
 
 .header {
