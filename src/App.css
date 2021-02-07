@@ -385,9 +385,6 @@ input::-webkit-calendar-picker-indicator {
 .navbar-hamburger,
 img {
   padding: 0.25rem 0.75rem;
-  background-color: transparent;
-
-  border-radius: 0.25rem;
   position: absolute;
   right: 0;
   top: 0;
