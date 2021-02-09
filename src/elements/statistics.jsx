@@ -273,7 +273,7 @@ class Statistics extends Component {
               <div className="row-transp div-center">
                 <select
                   onChange={() => this.changeState()}
-                  className="form-control form-control-lg select-prpl fade-in"
+                  // className="form-control form-control-lg select-prpl"
                   id="stateNum"
                 >
                   {this.state.caseData.map((stateMap, index) => (
