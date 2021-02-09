@@ -42,6 +42,7 @@ select {
   text-indent: 1px;
   text-overflow: "";
   text-align-last: center !important;
+  text-align: -webkit-center;
 }
 
 .select-prpl {
