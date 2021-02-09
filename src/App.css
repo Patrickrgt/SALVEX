@@ -135,6 +135,8 @@ select {
   padding: 2% 5% !important;
   margin: auto;
   width: 80%;
+  display: flex;
+  align-content: center;
 }
 
 .row-prpl {
