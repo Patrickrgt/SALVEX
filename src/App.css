@@ -47,20 +47,20 @@ select {
 
 #stateNum,
 .clone {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 #stateNum {
-  text-align: justify;
-  overflow: hidden;
-  background: white;
+  opacity: 0;
+
+  background: transparent;
 }
 
 .clone {
   text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .select-prpl {

@@ -109,12 +109,18 @@ class Statistics extends Component {
     clone.textContent = this.state.statesList[this.state.stateNum];
     clone.className = "clone form-control form-control-lg select-prpl fade-in";
     docSelect.parentNode.insertBefore(clone, docSelect);
-    docSelect.style.height = docSelect.offsetHeight - 14 + "px";
   }
 
-  changeState() {
+  async changeState() {
     const stateIndex = document.getElementById("stateNum").value;
-    this.setState({ stateNum: stateIndex });
+    await this.setState({ stateNum: stateIndex });
+
+    let docSelect = document.getElementById("stateNum");
+    let clone = document.createElement("docSelect");
+
+    clone.textContent = this.state.statesList[this.state.stateNum];
+    clone.className = "clone form-control form-control-lg select-prpl";
+    docSelect.parentNode.insertBefore(clone, docSelect);
   }
 
   render() {
