@@ -198,7 +198,7 @@ class Statistics extends Component {
                 </div>
               </div>
 
-              <div className="row mx-2 w-100">
+              <div className="row mx-2 ">
                 <div className="col-4 fade-in-up-1b">
                   <div className="row">
                     <p className="body-grey"> Total Cases </p>
@@ -270,7 +270,7 @@ class Statistics extends Component {
                 </select>
               </div>
 
-              <div className="row mx-2 w-100">
+              <div className="row mx-2 ">
                 <div className="col-4 fade-in-up-2s">
                   <div className="row">
                     <p className="body-grey"> Total Cases </p>
