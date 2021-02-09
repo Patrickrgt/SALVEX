@@ -37,12 +37,12 @@ body {
 /* BOOTSTRAP CUSTOM BELOW */
 
 select {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: "";
-  text-align-last: -webkit-center !important;
+  text-overflow: ""; */
   text-align: -webkit-center !important;
+  text-align-last: -webkit-center !important;
 }
 
 .select-prpl {
