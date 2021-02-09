@@ -102,6 +102,14 @@ class Statistics extends Component {
       .catch((error) => {
         console.error("Error:", error);
       });
+
+    let docSelect = document.getElementById("selector");
+    let clone = document.createElement("docSelect");
+
+    clone.textContent = docSelect.textContent;
+    clone.className = "clone";
+    docSelect.parentNode.insertBefore(clone, docSelect);
+    docSelect.style.height = docSelect.offsetHeight - 14 + "px";
   }
 
   changeState() {
@@ -256,14 +264,14 @@ class Statistics extends Component {
                 />
               </div>
 
-              <div className="row-transp div-center block">
+              <div className="row-transp div-center">
                 <select
                   onChange={() => this.changeState()}
                   className="form-control form-control-lg select-prpl fade-in"
                   id="stateNum"
                 >
                   {this.state.caseData.map((stateMap, index) => (
-                    <option value={index}>
+                    <option id="selector" value={index}>
                       {this.state.statesList[index]}
                     </option>
                   ))}
