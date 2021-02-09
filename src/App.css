@@ -41,8 +41,8 @@ select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
-  text-align-last: center !important;
-  text-align: -webkit-center;
+  text-align-last: -webkit-center !important;
+  text-align: -webkit-center !important;
 }
 
 .select-prpl {
