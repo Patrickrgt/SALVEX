@@ -118,6 +118,11 @@ select {
   margin: auto;
 }
 
+.block {
+  display: flex;
+  justify-content: center;
+}
+
 .row-grey {
   position: relative;
   top: -10px;

@@ -256,7 +256,7 @@ class Statistics extends Component {
                 />
               </div>
 
-              <div className="row-transp div-center">
+              <div className="row-transp div-center block">
                 <select
                   onChange={() => this.changeState()}
                   className="form-control form-control-lg select-prpl fade-in"
