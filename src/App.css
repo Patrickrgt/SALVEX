@@ -112,7 +112,7 @@ select {
 /* CENTER DIV */
 
 .div-center {
-  text-align: center;
+  text-align: -webkit-center !important;
   align-content: center;
   align-items: center;
   margin: auto;
