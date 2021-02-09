@@ -103,11 +103,11 @@ class Statistics extends Component {
         console.error("Error:", error);
       });
 
-    let docSelect = document.getElementById("selector");
+    let docSelect = document.getElementById("stateNum");
     let clone = document.createElement("docSelect");
 
-    clone.textContent = docSelect.textContent;
-    clone.className = "clone";
+    clone.textContent = this.state.statesList[this.state.stateNum];
+    clone.className = "clone form-control form-control-lg select-prpl fade-in";
     docSelect.parentNode.insertBefore(clone, docSelect);
     docSelect.style.height = docSelect.offsetHeight - 14 + "px";
   }

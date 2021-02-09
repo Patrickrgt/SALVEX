@@ -45,13 +45,15 @@ select {
   text-align-last: -webkit-center !important;
 }
 
-#selector,
+#stateNum,
 .clone {
-  line-height: 14px;
-  font: 14px arial;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-#selector {
+#stateNum {
   text-align: justify;
   overflow: hidden;
   background: white;
