@@ -497,8 +497,8 @@ class Assessment extends Component {
                 {this.state.userSymptomsSynonyms.map((userSymptom) => (
                   <li className="list-item">{userSymptom}</li>
                 ))}
-                <li className="fade-in">Enter at least 3 symptoms.</li>
               </ul>
+              <li className="list-sub fade-in">Enter at least 3 symptoms.</li>
             </div>
 
             {/** RESULTS BUTTON

@@ -47,6 +47,8 @@ select {
   color: #b4b0ff !important;
   font-size: 24px !important;
   border: none !important;
+  margin: auto;
+  text-align: center;
   text-align-last: center !important;
 }
 
@@ -297,6 +299,14 @@ input::-webkit-calendar-picker-indicator {
   color: #9e9da9;
   font-size: 22px;
   text-align: left;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.list-sub {
+  color: #9e9da9;
+  font-size: 22px;
+  text-align: center;
   list-style: none;
   margin-top: 25px;
 }
