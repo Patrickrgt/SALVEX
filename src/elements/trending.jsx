@@ -3,12 +3,13 @@ import Pagination from "../elements/pagination";
 import { paginate } from "../utils/paginate";
 import { Container } from "react-bootstrap";
 
+import axios from "axios";
+
 import line from "../img/line.png";
 import loading from "../img/loading.gif";
-const NewsAPI = require("newsapi");
-const newsapi = new NewsAPI("ce0ebff1947a464681f8c1204c2b7745", {
-  corsProxyUrl: "https://cors-anywhere.herokuapp.com/",
-});
+// const NewsAPI = require("newsapi");
+
+// const newsapi = new NewsAPI("ce0ebff1947a464681f8c1204c2b7745");
 
 class Trending extends Component {
   constructor() {
@@ -22,27 +23,38 @@ class Trending extends Component {
     };
   }
 
-  componentDidMount() {
-    newsapi.v2
-      .topHeadlines({
-        q: "covid",
-        category: "health",
-        language: "en",
-        country: "us",
-      })
-      .then((response) => {
-        this.setState(
-          {
-            articles: response.articles,
+  componentDidMount = () => {
+    axios.get("/getnews").then((response) => {
+      this.setState({
+        articles: response.data,
 
-            loadData: true,
-          },
-          () => {
-            console.log(this.state.lengthy);
-          }
-        );
+        loadData: true,
       });
-  }
+    });
+    // const reqOptions = {
+    //   mode: "cors",
+    //   headers: { "Access-Control-Allow-Origin": "*" },
+    // };
+    // newsapi.v2
+    //   .topHeadlines({
+    //     q: "covid",
+    //     category: "health",
+    //     language: "en",
+    //     country: "us",
+    //   })
+    //   .then((response) => {
+    // this.setState(
+    //   {
+    //     articles: response.articles,
+
+    //     loadData: true,
+    //   },
+    //   () => {
+    //     console.log(this.state.lengthy);
+    //   }
+    // );
+    //   });
+  };
 
   handlePageChange = (page) => {
     this.setState({ currentPage: page });
