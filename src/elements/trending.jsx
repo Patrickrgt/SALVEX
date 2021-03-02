@@ -24,13 +24,15 @@ class Trending extends Component {
   }
 
   componentDidMount = () => {
-    axios.get("/getnews").then((response) => {
-      this.setState({
-        articles: response.data,
+    axios
+      .get("https://salvexnewsapinodejs.herokuapp.com/getnews")
+      .then((response) => {
+        this.setState({
+          articles: response.data,
 
-        loadData: true,
+          loadData: true,
+        });
       });
-    });
     // const reqOptions = {
     //   mode: "cors",
     //   headers: { "Access-Control-Allow-Origin": "*" },
