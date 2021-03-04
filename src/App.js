@@ -52,8 +52,7 @@ function App() {
             </div>
 
             <div>
-              {window.location.href ===
-              "https://wonderful-swanson-7cf8e8.netlify.app/" ? (
+              {window.location.href === "https://www.asksalvex.com/" ? (
                 <main className="credits-contain">
                   <h1 className="credits-title">SLAVEX TEAM</h1>
                   <h2 className="credits">Maria-Victoria Vladucu</h2>
