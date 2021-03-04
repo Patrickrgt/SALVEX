@@ -28,7 +28,11 @@ function App() {
             </div>
 
             <div>
-              <img className="screen-qr" src={qrcode} />
+              <img
+                className="screen-qr"
+                src={qrcode}
+                alt="QR Code that you can scan with your phone to get on our mobile site."
+              />
             </div>
           </main>
         ) : (
