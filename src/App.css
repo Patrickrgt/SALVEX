@@ -10,6 +10,30 @@ body {
   font-style: normal;
 }
 
+/* LARGE RESOLUTION */
+
+.screen-contain {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #b4b0ff;
+  font-size: 24px;
+}
+
+.screen-text {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #9e9da9;
+  font-size: 24px;
+}
+
+.screen-qr {
+  width: 10%;
+}
+
 /* HEADER TEXT FOR MAJORITY OF TEXTS */
 
 .header {
