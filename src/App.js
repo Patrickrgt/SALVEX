@@ -54,7 +54,7 @@ function App() {
             <div>
               {window.location.href === "https://www.asksalvex.com/" ? (
                 <main className="credits-contain">
-                  <h1 className="credits-title">SLAVEX TEAM</h1>
+                  <h1 className="credits-title">SALVEX TEAM</h1>
                   <h2 className="credits">Maria-Victoria Vladucu</h2>
                   <h3 className="credits-sub">
                     UI Design &amp; Development, Data Design
