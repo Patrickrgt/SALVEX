@@ -47,7 +47,7 @@ class Assessment extends Component {
     let localRelations = this.state.relations[0];
     let localRelationsLen = localRelations.relations;
     // console.log(Object.keys(localRelations.relations[0]));
-    // console.log(Object.values(localRelationsLen));
+    console.log(Object.values(localRelationsLen));
 
     let relations = [];
 
@@ -61,19 +61,19 @@ class Assessment extends Component {
       obj["relationCui"] = cuiInner;
       relations.push(obj);
     }
-    // console.log(relations);
+    console.log(relations);
     this.setState(
       {
         relationsObj: relations,
+      },
+      () => {
+        console.log(this.state.relationsObj);
       }
-      // () => {
-      //   console.log(this.state.relationsObj);
-      // }
     );
   }
 
   async fetchCUI(filteredItem) {
-    // console.log(filteredItem);
+    console.log(filteredItem);
 
     await db
       .collection("dummySymptoms")
@@ -111,7 +111,7 @@ class Assessment extends Component {
           (list) => !list.relationCui.includes(this.state.filteredItemCui)
         );
         const newSymptomResults = oldSymptomResults;
-        // console.log(newSymptomResults);
+        console.log(newSymptomResults);
         this.setState({
           relationsObj: newSymptomResults,
         });
@@ -128,7 +128,7 @@ class Assessment extends Component {
         let symptomResults = this.state.symptomList.filter((list) =>
           list.includes(this.state.symptomQuery)
         );
-        // console.log(this.state.symptomQuery);
+        console.log(this.state.symptomQuery);
         this.setState({
           symptomResults: symptomResults.slice(0, 5),
         });
@@ -163,10 +163,10 @@ class Assessment extends Component {
         this.setState(
           {
             symptomList: newSymptomResults,
+          },
+          () => {
+            console.log(this.state.symptomList);
           }
-          // () => {
-          //   console.log(this.state.symptomList);
-          // }
         );
       }
     );
@@ -214,10 +214,10 @@ class Assessment extends Component {
           this.setState(
             {
               diseasesMerge: [...this.state.diseasesMerge, symptomObj],
+            },
+            () => {
+              console.log(this.state.diseasesMerge);
             }
-            // () => {
-            //   console.log(this.state.diseasesMerge);
-            // }
           );
         });
     }
@@ -245,7 +245,7 @@ class Assessment extends Component {
       }
     });
 
-    // console.log(matchingDiseases);
+    console.log(matchingDiseases);
 
     for (const match in matchingDiseases) {
       let diseasesObj = {};
@@ -323,9 +323,9 @@ class Assessment extends Component {
       }
     }
 
-    // console.log(symptoms.length);
+    console.log(symptoms.length);
 
-    // console.log(this.state.userMatchingDiseases);
+    console.log(this.state.userMatchingDiseases);
 
     await this.rank();
   }

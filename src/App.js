@@ -19,7 +19,7 @@ function App() {
   return (
     <React.Fragment>
       <div>
-        {window.innerWidth > 758 ? (
+        {window.innerWidth > 770 ? (
           <main className="screen-contain">
             <div className="screen-text">
               The SALVEX application currently works on mobile viewing screens.
@@ -66,11 +66,16 @@ function App() {
                   <h2 className="credits">Patrick Torres</h2>
                   <h3 className="credits-sub">
                     UI Design &amp; Development, Algorithm Design &amp;
-                    Development, Integration{" "}
+                    Development, Integration, Maintenance
                   </h3>
                   <h2 className="credits">Isabella Soldati Mol</h2>
                   <h3 className="credits-sub">
                     UI Design &amp; Development, Algorithm Design
+                  </h3>
+                  <br></br>
+                  <h3>
+                    API used in the Statistics tab is currently deprecated as of
+                    June 2021.
                   </h3>
                 </main>
               ) : (
